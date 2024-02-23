@@ -1,0 +1,27 @@
+<html>
+    <head><h1>Sum of Two Numbers</h1></head>
+    <br>
+    <body>
+        <input id="val1"/>
+        <input id="val2"/><br>
+        <button id="btn">Sum</button>
+        <button id="sub">Sub</button>
+        <p id="result"> </p>
+    </body>
+    <script>
+        document.getElementById('btn').onclick = add;
+        document.getElementById('sub').onclick = sub;
+        function add(){
+            let val1 = document.getElementById("val1").value;
+            let val2 = document.getElementById("val2").value;
+            let sum_number = parseInt(val1) + parseInt(val2);
+            document.getElementById('result').innerHTML = sum_number;
+        }
+        function sub(){
+            let val1 = document.getElementById("val1").value;
+            let val2 = document.getElementById("val2").value;
+            let sum_number = parseInt(val1) - parseInt(val2);
+            document.getElementById('result').innerHTML = sum_number;
+        }
+    </script>
+</html>
